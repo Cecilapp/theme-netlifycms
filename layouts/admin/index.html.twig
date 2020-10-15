@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/netlify-cms@{{ site.netlify.cms.version|default('latest') }}/dist/netlify-cms.js"></script>
     <script src="https://identity-js.netlify.com/{{ site.netlify.identity.version|default('v1') }}/netlify-identity-widget.js"></script>
     <script>
+      // Identity
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', user => {
           if (!user) {
@@ -23,7 +24,23 @@
           document.location.href = '/';
         });
       }
+      // Preview: Style
       //CMS.registerPreviewStyle('/css/style.css');
+      // Preview: Templates
+      var Episode = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          return h('div', {},
+            h('h1', {}, entry.getIn(['data', 'title'])),
+            h('div', {}, entry.getIn(['data', 'date'])),
+            h('div', {"className": "text"}, this.props.widgetFor('body')),
+            h('div', {},
+              h('audio', {controls: "controls", "src": entry.getIn(['data', 'episode', 'file'])}),
+            )
+          );
+        }
+      });
+      CMS.registerPreviewTemplate("episodes", Episode);
     </script>
   </body>
 </html>

@@ -10,3 +10,9 @@ netlify:
     version: "latest"
   identity:
     version: "v1"
+serviceworker:
+  ignore:
+    - name: 'cms'
+      path: '/admin'
+    - name: 'netlify'
+      path: '/.netlify'

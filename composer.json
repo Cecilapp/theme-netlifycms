@@ -2,7 +2,7 @@
   "name": "cecil/theme-netlifycms",
   "type": "cecil-theme",
   "description": "Cecil component theme Netlify CMS",
-  "keywords": ["Cecil", "theme", "CMS"],
+  "keywords": ["Cecil", "theme", "CMS", "Netlify"],
   "license": "MIT",
   "require": {
     "cecil/theme-installer": "^1.3"

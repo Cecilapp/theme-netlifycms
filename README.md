@@ -19,4 +19,10 @@ theme:
   - netlify-cms
 ```
 
+Add Netlify's Identity support:
+
+```twig
+{% include 'partials/identity.html.twig' %}
+```
+
 The default route to the CMS is `/admin/`.

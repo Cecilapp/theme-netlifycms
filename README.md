@@ -19,7 +19,7 @@ theme:
   - netlify-cms
 ```
 
-Add Netlify's Identity support:
+Add [Netlify Identity](https://docs.netlify.com/visitor-access/identity/) support:
 
 ```twig
 {% include 'partials/identity.html.twig' %}

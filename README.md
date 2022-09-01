@@ -1,6 +1,6 @@
-# Cecil component theme: Netlify CMS
+# Netlify CMS component theme
 
-> The _Netlify CMS_ component theme for [Cecil](https://cecil.app) provides support of [Netlify CMS](https://www.netlifycms.org).
+The _Netlify CMS_ component theme for [Cecil](https://cecil.app) provides support of [Netlify CMS](https://www.netlifycms.org).
 
 ## Installation
 

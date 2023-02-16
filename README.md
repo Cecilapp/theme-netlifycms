@@ -4,7 +4,7 @@ The _Netlify CMS_ component theme for [Cecil](https://cecil.app) provides suppor
 
 ## Features
 
-- Provides a default `config.yml` file in `static/admin/`
+- Provides a default Netlify CMS `config.yml` file
 - Supports [Netlify Identity](https://docs.netlify.com/visitor-access/identity/)
 
 ## Installation

@@ -27,7 +27,7 @@ theme:
 Include _Netlify Identity_ template:
 
 ```twig
-{%~ include 'partials/identity.html.twig' with {'site': site} only ~%}
+{% include 'partials/identity.html.twig' with {'site': site} only %}
 ```
 
 Customize CMS configuration by copying [`config.yml`](https://github.com/Cecilapp/theme-netlifycms/blob/main/static/admin/config.yml) into `static/admin/`.

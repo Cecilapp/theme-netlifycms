@@ -1,9 +1,10 @@
-defaultpages:
-  admin:
-    path: admin
-    title: "Content Manager (Netlify CMS)"
-    layout: admin/index
-    output: html
+pages:
+  default:
+    admin:
+      path: admin
+      title: "Content Manager (Netlify CMS)"
+      layout: admin/index
+      output: html
 netlify:
   cms:
     path: "admin"

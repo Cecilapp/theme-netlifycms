@@ -1,9 +1,3 @@
-defaultpages:
-  admin:
-    path: admin
-    title: "Content Manager (Netlify CMS)"
-    layout: admin/index
-    output: html
 netlify:
   cms:
     path: "admin"
@@ -16,3 +10,10 @@ serviceworker:
       path: '/admin'
     - name: 'netlify'
       path: '/.netlify'
+pages:
+  default:
+    admin:
+      path: admin
+      title: "Content Manager (Netlify CMS)"
+      layout: admin/index
+      output: html
